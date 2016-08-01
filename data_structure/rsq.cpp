@@ -40,16 +40,15 @@ int main() {
 		if (q==1) {
 			int t2;
 			long long t3; 
-      scanf("%d %lld",&t2,&t3); 
+      		scanf("%d %lld",&t2,&t3); 
 			long long diff = t3-A[t2];
 			A[t2]=t3;
 			update(1,N,1,t2,diff);
 		} else {
 			int t2,t3; 
 			scanf("%d %d",&t2,&t3); 
-      printf("%lld\n",query(1,N,1,t2,t3)); 
+      		printf("%lld\n",query(1,N,1,t2,t3)); 
 		}
 	}
-
 	return 0;
 }
